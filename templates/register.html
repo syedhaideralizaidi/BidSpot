@@ -1,35 +1,12 @@
-{#{% extends "base.html" %}#}
-{##}
-{#{% block title %}{% endblock %}#}
-{##}
-{#{% block content %}#}
-{##}
-{#<div class="event">#}
-{#    <p><h1>Welcome to Signup Page</h1></p>#}
-{#</div>#}
-{#<h1>Register</h1>#}
-{##}
-{#<form method="post">#}
-{#    {% csrf_token %}#}
-{#    {{ form.as_p }}#}
-{#    <input type="submit" value="Register">#}
-{#</form>#}
-{##}
-{#<p>Already have an account? <a href="">Login</a></p>#}
-{##}
-{#{% endblock %}#}
-
-
 {% extends "base.html" %}
 
 {% block title %}{% endblock %}
 
 {% block content %}
 <style>
-    /* CSS to center the form, add padding from top, and style fields */
     .signup-form-container {
         width: 400px;
-        margin: 20px auto; /* Add margin from the top */
+        margin: 20px auto;
         padding: 20px;
         background-color: #f4f4f4;
         border: 1px solid #ccc;

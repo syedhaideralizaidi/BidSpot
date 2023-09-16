@@ -1,31 +1,9 @@
-{#{% extends "base.html" %}#}
-{##}
-{#{% block title %}{% endblock %}#}
-{##}
-{#{% block content %}#}
-{##}
-{#<div class="event">#}
-{#    <p><h1>Welcome to Login Page</h1></p>#}
-{#</div>#}
-{##}
-{#<form method="post">#}
-{#    {% csrf_token %}#}
-{#    {{ form.as_p }}#}
-{#    <input type="submit" value="Login">#}
-{#</form>#}
-{##}
-{#<p>Don't have an account? <a href="{% url 'signup' %}">Register</a></p>#}
-{##}
-{##}
-{#{% endblock %}#}
-
 {% extends "base.html" %}
 
 {% block title %}{% endblock %}
 
 {% block content %}
 <style>
-    /* CSS to center the form and style fields */
     .login-form-container {
         width: 400px;
         margin: 0 auto;
